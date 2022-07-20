@@ -189,7 +189,7 @@ Blog Section START Here
 
 .blog-card-bottom-info{
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     padding: 10px;
 }
