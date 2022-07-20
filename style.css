@@ -247,7 +247,7 @@ Footer Style START Here
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #56042C;
+    background-color: #56042C;
 }
 
 .footer-website-name{
@@ -271,7 +271,6 @@ Footer Style START Here
 hr{
     width: 80%;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    
 }
 
 .footer-social-links{
