@@ -217,6 +217,7 @@ View All Button Section Style START Here
 ========================================*/
 
 .view-all-button-section{
+    visibility: hidden;
     display: flex;
     justify-content: center;
     margin: 50px 0;
@@ -266,6 +267,10 @@ Footer Style START Here
     color: #fafafa;
 }
 
+.footer-helpful-link:hover{
+    text-decoration: underline;
+}
+
 hr{
     width: 80%;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -301,7 +306,7 @@ Footer Style END Here
 /* Mobile Device - Max Width: 688px*/
 
 @media only screen and (max-width:688px) {
-    /*--------------------------Banner-----  */
+    /*---------------------Banner (Mobile View) -----  */
     .banner{
         display: flex;
         flex-direction: column;
@@ -324,7 +329,7 @@ Footer Style END Here
         text-align: center;
     }
 
-    /*--------------------------Blog Section-----  */ 
+    /*-----------------------Blog Section (Mobile View)-----  */ 
 
     .blog-contents-section{
         flex-direction: column;
@@ -344,13 +349,83 @@ Footer Style END Here
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* ---------------------------- View All Button--- */
+    /* ---------------------------- View All Button (Mobile View) --- */
     .view-all-button-section{
         visibility: hidden;
     }
 
-    /* ---------------------------- Footer ---------- */
+    /* ---------------------------- Footer (Mobile View) ---------- */
     .footer-links{
         flex-direction: column;
     }
+}
+
+
+
+/* Mobile Device - Max Width: 992px */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    /*--------------------------Banner (tablet View) -----  */
+    .banner{
+        display: flex;
+        width: 95%;
+        padding: 30px 30px 0 30px;
+        background-color: red;
+    }
+    .banner-container-left{
+        margin-right: 20px;
+    }
+    .banner-left-title{
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    /*-----------------------Blog Section (tablet View) -----  */ 
+    .blog-contents-section{
+       flex-direction: column; 
+    }
+    
+    .sude-menu-container{
+        width: 100%;
+        height: fit-content;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        background: none;
+    }
+
+    .menu{
+        flex: 1;
+        width: 80%;
+        border: 1px solid rgb(172, 172, 172);
+    }
+    .menu-all-groups{
+        margin: 0 20px;
+    }
+
+    .menu:hover{
+        background-color: #ffffff;
+    }
+
+    .blog-cards-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---------------------------- View All Button (Tablet View) ---------- */
+    .view-all-button-section{
+        visibility: visible;
+    }
+
+    /* ---------------------------- Footer (Tablet View) ---------- */
+    .footer-links{
+        width: 70%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-helpful-link{
+        margin: 0 10px;
+    }
+    
 }
