@@ -91,7 +91,6 @@ Banner Stylings END Here
 
 
 
-
 /* ======================= 
 Blog Section START Here 
 ==========================*/
@@ -211,4 +210,88 @@ Blog Section START Here
 }
 /* ======================= 
 Blog Section END Here 
+==========================*/
+
+
+
+/* ===================================== 
+View All Button Section Style START Here 
+========================================*/
+
+.view-all-button-section{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.view-all-button{
+    background: #1077C3;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* ===================================== 
+View All Button Section Style START Here 
+========================================*/
+
+
+
+/* =======================
+Footer Style START Here 
+==========================*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #56042C;
+}
+
+.footer-website-name{
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.footer-links{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.footer-helpful-link{
+    text-decoration: none;
+    color: #fafafa;
+}
+
+hr{
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+}
+
+.footer-social-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.footer-social-links-title{
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.fa-brands{
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 0 8px;
+}
+/* =======================
+Footer Style END Here 
 ==========================*/
