@@ -4,142 +4,6 @@
     box-sizing: border-box;
 }
 
-/* ----- Common Stylyings START here ----- */
-body{
-    font-family: 'Poppins', sans-serif;
-}
-/* ----- Common Stylyings END here ----- */
-
-
-
-/* ======================= 
-Banner Stylings START Here 
-==========================*/
-.banner{
-    background-image: url(../assets/header-background-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    border-radius: 30px;
-    display: flex;
-    padding: 35px 80px 0 80px;
-}
-.banner-flex-size{
-    flex: 1;
-}
-.banner-container-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.banner-left-title{
-    font-size: 4.5em;
-    font-size: 60px;
-    color: #FFFFFF;
-    line-height: 65px;
-}
-
-.banner-left-text{
-    color: #e3e3e3;
-    font-size: 15px;
-    font-weight: 300;
-    margin: 20px 0 30px 0;
-}
-
-/* --------------------------- Banner Animated Button--------- */
-.banner-left-watch-now-btn{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1em;
-    color: #ffffff;
-    background: #1077C3;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.fa-arrow-right{
-    margin-left: 50px;
-    animation: load 1.5s ease-in-out infinite;
-}
-
-.banner-left-watch-now-btn:hover{
-    background: white;
-    color: #1077C3;
-}
-@keyframes load{
-    0%,100%{
-        margin-left: 60px;
-    }
-    50%{
-        margin-left: 10px;
-    }
-}
-
-/* ---------------------------- Banner Right Side Styling --------------- */
-.banner-right-image{
-    width: 100%;
-}
-/* ======================= 
-Banner Stylings END Here 
-==========================*/
-
-
-
-/* ======================= 
-Blog Section START Here 
-==========================*/
-
-.blog-contents-section{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-
-}
-
-/* ----------------------------- Blog Side Menu ----- */
-.side-menu{
-    flex: 1;
-}
-
-.sude-menu-container{
-    width: 250px;
-    height: 250px;
-    background-color: #56042C;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    width: 90%;
-    height: 64px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #161616;
-}
-
-.menu:hover{
-    background-color: #56042C;
-    border: 2px solid #1077C3;
-    color: #1077C3;
-}
-
-.menu-blogs{
-    background-color: #1077C3;
-    color: #FFFFFF;
-}
-
-
 
 /* ------------------------------ Blog Section Cards ----- */
 .blog-cards-container{
@@ -151,61 +15,42 @@ Blog Section START Here
     gap: 20px;
 }
 
-.blog-card{
+.match-between-cards{
     border-radius: 10px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
-.blog-card-image{
+.match-between-flags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-between-flag{
+    flex: 1;
     width: 100%;
-    display: block;
 }
 
-.blog-card-content{
-    padding: 20px 10px;
-    background: #fafafa;
+.match-between-vs{
+    padding: 0 10px;
 }
 
-.blog-card-button{
-    text-decoration: none;
-    color: #161616;
-    padding: 5px;
-    border: 1px solid #161616;
-    border-radius: 5px;
+.match-between-country-name{
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
-.blog-card-button:hover{
-    background: #161616;
-    color: #FFFFFF;
+.match-between-date-time{
+    font-size: 14px;
+    color: #4D4D4D;
 }
 
-.blog-card-title{
-    font-size: 1em;
-    margin: 20px 0 0 0;
-    color: #161616;
-}
-
-.blog-card-bottom-info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.blog-card-botton-info-wrap{
-    display: flex;
-    align-items: center;
-}
-
-.material-symbols-outlined{
-    color: rgba(22, 22, 22, 0.8);
-}
-
-.blog-card-bottom-info{
-    color: rgba(22, 22, 22, 0.7);
-}
 /* ======================= 
 Blog Section END Here 
 ==========================*/
@@ -362,7 +207,7 @@ Footer Style END Here
 
 
 
-/* Tablet View - Max Width: 992px */
+/* Mobile Device - Max Width: 992px */
 
 @media only screen and (min-width:689px) and (max-width:992px) {
     /*--------------------------Banner (tablet View) -----  */
